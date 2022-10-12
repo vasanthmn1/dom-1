@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- <script src="app.js"></script> -->
+
+    <script>
+        var label1 = createlabels("label", "for", "text", "Fistname");
+        var br1 = createlinebreak("br");
+        var input1 = createinput("input", "type", "text", "id", "fistname");
+        var br2 = createlinebreak("br");
+
+        var label2 = createlabels("label", "for", "text", "Middelname");
+        var br3 = createlinebreak("br");
+        var input2 = createinput("input", "type", "text", "id", "Md");
+        var br4 = createlinebreak("br");
+
+        var label3 = createlabels("label", "for", "text", "LastName");
+        var br5 = createlinebreak("br");
+        var input3 = createinput("input", "type", "text", "id", "LN");
+        var br6 = createlinebreak("br");
+
+        var label4 = createlabels("label", "for", "text", "Phone number");
+        var br5 = createlinebreak("br");
+        var input4 = createinput("input", "type", "text", "id", "Md");
+        var br6 = createlinebreak("br");
+
+        var label5 = createlabels("label", "for", "number", "phoneNumber");
+        var br7 = createlinebreak("br");
+        var input5 = createinput("input", "type", "number", "id", "number");
+        var br8 = createlinebreak("br");
+
+
+        document.body.append(label1, br1, input1, br2, label2, br3, input3, br4, label3, br5, input4, br6, label5, br7, input5, br8);
+
+
+        function createlabels(tagname, attrname, attrvalue, content) {
+            var ele = document.createElement(tagname);
+            ele.setAttribute(attrname, attrvalue);
+            ele.innerHTML = content;
+            return ele;
+        }
+
+        function createinput(tagname, attrname, attrvalue, attrname1, attrvalue1) {
+            var ele = document.createElement(tagname);
+            ele.setAttribute(attrname, attrvalue);
+            ele.setAttribute(attrname1, attrvalue1);
+            return ele;
+        }
+        function createlinebreak(tagname) {
+            var ele = document.createElement(tagname);
+            return ele;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>
